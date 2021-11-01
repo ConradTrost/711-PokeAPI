@@ -7,3 +7,20 @@ mat-card {
     margin: auto;
     width: 80vw;
 }
+
+.navigation {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 20px 0;
+    background: #fff;
+}
+
+.navigation a {
+    margin: 0 20px;
+    color: #000;
+}
