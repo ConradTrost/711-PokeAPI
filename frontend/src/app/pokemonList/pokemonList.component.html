@@ -1,0 +1,13 @@
+<div class="navigation" >
+    <div class="button-container">
+        <button mat-raised-button (click)="loadPokemon(page - 1)" color="primary" [disabled]="isFirstPage">Previous</button>
+        <button mat-raised-button (click)="loadPokemon(page + 1)" color="primary">Next</button>
+    </div>
+</div>
+
+<div class="pokemon-list-container">
+    <mat-card class="pokemon-card" *ngFor="let poke of pokemon" color="primary">
+        <mat-card-title>{{poke.name}}</mat-card-title>
+        <a mat-raised-button href="/pokemon?pokemon={{poke.name}}" color="primary">More Info</a>
+    </mat-card>
+</div>

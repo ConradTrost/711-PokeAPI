@@ -1,0 +1,9 @@
+.pokemon-details-container {
+    padding: 5vw;
+    display: flex;
+}
+
+mat-card {
+    margin: auto;
+    width: 80vw;
+}
