@@ -1,0 +1,25 @@
+{
+  "name": "711-PokeAPI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installs": "npm i && cd ./backend && npm i && cd ../frontend && npm i",
+    "start": "concurrently --kill-others \"cd ./backend && npm run start:dev\" \"cd ./frontend && npm run start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConradTrost/711-PokeAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ConradTrost/711-PokeAPI/issues"
+  },
+  "homepage": "https://github.com/ConradTrost/711-PokeAPI#readme",
+  "devDependencies": {
+    "concurrently": "^6.3.0"
+  }
+}
